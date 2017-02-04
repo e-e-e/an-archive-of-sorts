@@ -1,0 +1,122 @@
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./black.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./black_italic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./extrabold.woff') format('woff');
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./extrabold_italic.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./bold.woff') format('woff');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./bold_italic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./semibold.woff') format('woff');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./semibold_italic.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./regular.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'default-font';
+	src: url('./regular_italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font-book';
+	src: url('./regular.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'default-font-book';
+	src: url('./regular_italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'default-font-display';
+	src: url('./display_black.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font-display';
+	src: url('./display_black_italic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font-display';
+	src: url('./display_bold.woff') format('woff');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'default-font-display';
+	src: url('./display_bold_italic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'default-font-display';
+	src: url('./display_regular.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'default-font-display';
+	src: url('./display_regular_italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
