@@ -4,10 +4,16 @@
     <hr/>
     <div v-html="content"></div>
     <hr/>
-    <h2>Children:</h2>
+    <h2>Files:</h2>
+      <ul>
+      <li v-for="file in om.files"> 
+        {{file}}
+      </li>
+    </ul>
+    <h2>Links:</h2>
     <ul>
-      <li v-for="child in om.children"> 
-        <router-link :to="{path:`/ommatidia/${child.om_id}`}">{{ child.title }}</router-link>
+      <li v-for="link in om.links"> 
+        <router-link :to="{path:`/ommatidia/${link.om_id}`}">{{ link.title }}</router-link>
       </li>
     </ul>
     <h2>Subjects:</h2>

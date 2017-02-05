@@ -7,7 +7,6 @@ import {
 
 export default {
   [SET_LOADING]: (state, payload) => {
-    console.log(SET_LOADING, payload);
     state.loading = payload;
   },
   [SET_SUBJECTS]: (state, payload) => {
