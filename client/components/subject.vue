@@ -3,7 +3,7 @@
     <router-link v-if="!s.facet" :to="{ path: `/term/${s.term_id}`}">{{s.term}}</router-link>
     <div v-else @click="toggle">{{s.term}}</div>
     <transition name="fade">
-      <div v-show="visible" class="extra">
+      <div v-if="visible" class="extra">
         <p v-if="s.notes" class="notes">{{s.notes}}</p>
         <ul>
           <subject v-for="child in s.children" :depth="depth+1" :s="child"></subject>
