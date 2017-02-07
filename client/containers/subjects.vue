@@ -1,6 +1,5 @@
 <template>
 <div>
-  <h1>THIS IS SUBJECTS VIEW</h1> 
   <ul>
     <subject v-for="subject in subjects" :s="subject"></subject>
   </ul>

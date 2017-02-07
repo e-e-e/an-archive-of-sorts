@@ -1,7 +1,5 @@
 <template>
 <div>
-	<h1>THIS IS OMMATIDIA VIEW</h1>
-	<p>{{ $route.params.id }}</p>
   <ommatidium v-for="om in oms" :om="om" ></ommatidium>
 </div>
 </template>
