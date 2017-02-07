@@ -1,23 +1,30 @@
 <template>
-  <div id="app">
-    <h1>An archive of sorts,</h1>
-    <div v-show="loading" >LOADING</div>
-    <router-link to='/subjects'>Subjects</router-link>
-    <router-link to='/ommatidia'>Ommatidium</router-link>
+  <main id="app">
+    <loader :loading="loading"/>
+    <header>
+      <h1>An archive of sorts,</h1>
+      <router-link to='/subjects'>Subjects</router-link>
+      <router-link to='/ommatidia'>Ommatidium</router-link>
+    </header>
     <router-view></router-view>
-  </div>
+    <footer>
+      <p>This is the end...</p>
+    </footer>
+  </main>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 import ommatidium from 'components/ommatidium';
 import subject from 'components/subject';
+import loader from 'components/loader';
 
 export default {
   name: 'app',
   components: {
     ommatidium,
     subject,
+    loader,
   },
   computed: {
     ...mapState(['loading']),
@@ -27,6 +34,12 @@ export default {
 
 <style src="./assets/fonts/fonts.css"></style>
 <style>
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 #app {
   font-family: 'default-font-display', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
