@@ -1,7 +1,14 @@
 import axios from 'axios';
 import Promise from 'bluebird';
 import _ from 'lodash';
-import { makeSubjectsHierarchical } from 'lib/utils';
+import {
+  makeSubjectsHierarchical,
+  isImage,
+  isAudio,
+  isVideo,
+  isPDF,
+  isMarkdown,
+  isPlainText } from 'lib/utils';
 
 import {
   GET_SUBJECTS,
@@ -43,7 +50,15 @@ const massageOmData = (omData) => {
       const massageOm = {
         ...omData,
         links,
-        files,
+        files: {
+          images: _.remove(files, isImage),
+          audio: _.remove(files, isAudio),
+          video: _.remove(files, isVideo),
+          pdfs: _.remove(files, isPDF),
+          markdown: _.remove(files, isMarkdown),
+          plaintext: _.remove(files, isPlainText),
+          others: files,
+        },
       };
       return _.omit(massageOm, 'children');
     });
