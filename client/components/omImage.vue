@@ -16,8 +16,8 @@ export default {
   },
   computed: {
     imageSrc() {
-      const { original_path: dir, original_name: name } = this.file;
-      return `${dir}/${name}`;
+      const { path: dir, name } = this.file;
+      return `http://localhost:3000/${dir}/${name}`;
     },
   },
 };
